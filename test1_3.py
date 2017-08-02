@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import tensorflow as tf
 
 state = tf.Variable(0,name='counter')
@@ -11,6 +15,6 @@ with tf.Session() as sess:
     sess.run(init)
     for _ in range(3):
         sess.run(update)
-        print sess.run(state)
+        print(sess.run(state))
 
 

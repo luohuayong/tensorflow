@@ -2,7 +2,7 @@
 
 """
 Tensorflow 实战google深度学习框架示例程序
-MNIST训练神经网络(2层 4个神经元)
+MNIST训练神经网络(2层 510个神经元)
 """
 from __future__ import absolute_import
 from __future__ import division

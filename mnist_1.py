@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import tensorflow as tf
 import tensorflow.examples.tutorials.mnist
 
@@ -18,4 +22,4 @@ for i in range(1000):
     correct = tf.equal(tf.argmax(y,1),tf.argmax(y_,1))
     accuracy = tf.reduce_mean(tf.cast(correct,tf.float32))
     if i % 20 == 0:
-        print sess.run(accuracy,feed_dict={x:mnist.test.images,y:mnist.test.labels})
+        print(sess.run(accuracy,feed_dict={x:mnist.test.images,y:mnist.test.labels}))

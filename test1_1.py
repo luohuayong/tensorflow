@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import tensorflow as tf
 import numpy as np
 
@@ -17,5 +21,5 @@ sess.run(init)
 for item in range(201):
     sess.run(train)
     if item % 20 == 0 :
-        print item,sess.run(Weights),sess.run(biases)
+        print(item,sess.run(Weights),sess.run(biases))
 
