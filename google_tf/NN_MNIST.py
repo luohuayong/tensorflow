@@ -10,7 +10,6 @@ from __future__ import print_function
 
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
-from numpy.random import RandomState
 
 mnist = input_data.read_data_sets("..\MNIST_data", one_hot=True)
 print("训练数据尺寸:", mnist.train.num_examples)
@@ -31,7 +30,7 @@ BATCH_SIZE = 100
 LEARNING_RATE_BASE = 0.8
 LEARNING_RATE_DECAY = 0.99
 REGULARIZATION_RATE = 0.0001
-TRAINING_STEPS = 30000
+TRAINING_STEPS = 10000
 MOVING_AVERAGE_DECAY = 0.99
 
 
