@@ -1,0 +1,2 @@
+
+py -3 C:\Python36\Lib\site-packages\tensorflow\tensorboard\tensorboard.py --logdir data/log
